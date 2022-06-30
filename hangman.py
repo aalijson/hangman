@@ -1,7 +1,4 @@
-
 import random
-
-#const
 HANGMAN = (
 """
 ------
@@ -91,7 +88,7 @@ HANGMAN = (
 # MAX_WRONG = len(HANGMAN) - 1
 WORDS = ('КНИГА', 'СТОЛ', 'ЭНЦИКЛОПЕДИЯ', 'ШКОЛА', 'ЗДОРОВЬЕ', 'ПРОГРАММИРОВАНИЕ')
 word = random.choice(WORDS)
-so_far = "*" * len(word) 
+so_far = "*" * len(word)
 wrong = 6 
 used = [] 
 print("\t\tДобро пожаловать в игру 'Виселица'!")
@@ -136,6 +133,3 @@ else:
     print("\nВы угадали слово!")
 print("\nБыло загаданно слово", word, "!")
 input("\n\nPress ENTER to EXIT.")
-
-
-
